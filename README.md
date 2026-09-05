@@ -1,6 +1,6 @@
 # R6_Drone
 
-This repo is a documentation of the ongoing successes and failures with building a drone inspired by Tom Clancy's Rainbow Six Siege. As a disclaimer, because I was doing this project alone, I have used AI to generate part of the code specifically the front end, however the back end, the motor control files are written by me. I am also not an everything engineer as I spent most of my time researching the electronics for this project and had to supplement a lot of the other challenges to AI.
+This repo is a documentation of the ongoing successes and failures with building a drone inspired by Tom Clancy's Rainbow Six Siege.
 
 **Contents**
 
@@ -14,7 +14,7 @@ This repo is a documentation of the ongoing successes and failures with building
 
 This drone is composed of a cylindrical chassis with two mecanum wheels attached at both ends. In the game, it is able to move in all directions and even jump, however, the jumping is above my paygrade and a few concessions must be done in order to get the omnimovement working. I will refer to these concessions in the Experimentation section.
 
-The main challenge with this setup is the coaxial mecanum setup. Usually a typical mecanum wheel setup contains 4 mecanum wheels with 2 on 1 axis and the other 2 on the other axis. This setup allows diagonal forces to sufficiently cancel and move omnidirectionally by controlling each wheel independently. For example if you want to go forward all wheels go forward, but sideways diagonal wheels must be going in the same direction. However, it gets trickier because we only have one axis and two wheels.
+The main challenge with this setup is the coaxial mecanum setup. Usually a typical mecanum wheel setup contains 4 mecanum wheels with 2 on 1 axis and the other 2 on the other axis. This setup allows diagonal forces to sufficiently cancel and move omnidirectionally by controlling each wheel independently. For example if you want to go forward all wheels go forward, but sideways diagonal wheels must be going in the same direction. However, it gets trickier because we only have one axis and two wheels. In control terms the platform is underactuated, with two actuators against three degrees of freedom, so lateral velocity isn't independently commandable no matter how the wheels are driven.
 
 Looking at the drone from the game there is a tail (commonly called the antennae) on the back of the drone. It creates an important 3rd point of contact so that it can actually move forward. If there was no tail, the motors would just spin the chassis.
 
@@ -36,3 +36,7 @@ It's impossible for the drone to move backwards in its current state. What would
 
 1. **Integrated flywheel:** I'm no mechanical engineer, however a wheel on the inside that spins may be able to resist the torque of the motors that allow for short bursts of sideward movement. However, this would need a complete redesign and a PCB with feedback sensors, which honestly isn't worth testing.
 2. **Skids:** Probably the most feasible of the solutions, adding skids to the front of the chassis would limit its ability to rotate past a certain point, and with this may allow for some slipping and strafing may be possible.
+
+---
+
+Front-end UI generated with AI assistance; motor control and drive logic written by me.
