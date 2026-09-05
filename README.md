@@ -1,3 +1,6 @@
+<img width="1800" height="1350" alt="drone_iso" src="https://github.com/user-attachments/assets/b9bdab08-6a4e-4bd2-bc8c-9937ed43940b" />
+<img width="1800" height="1350" alt="drone_top" src="https://github.com/user-attachments/assets/a857c751-db1c-4695-94b3-6269468a6b17" />
+<img width="1800" height="1350" alt="drone_side" src="https://github.com/user-attachments/assets/ff475d51-10b8-4f09-9370-d1c6fa50b9f0" />
 # R6_Drone
 
 This repo is a documentation of the ongoing successes and failures with building a drone inspired by Tom Clancy's Rainbow Six Siege.
